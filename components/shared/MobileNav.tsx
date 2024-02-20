@@ -51,6 +51,7 @@ const MobileNav = () => {
 
                     return (
                       <li
+                        // eslint-disable-next-line tailwindcss/no-custom-classname
                         className={`${isActive && "gradient-text"} p-18 flex whitespace-nowrap text-dark-700`}
                         key={link.route}
                       >

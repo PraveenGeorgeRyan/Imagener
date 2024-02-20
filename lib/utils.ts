@@ -5,6 +5,7 @@ import qs from "qs";
 import { twMerge } from "tailwind-merge";
 
 import { aspectRatioOptions } from "@/constants";
+import { FormUrlQueryParams, RemoveUrlQueryParams } from "@/types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -86,6 +87,7 @@ export function removeKeysFromQuery({
 
 // DEBOUNCE
 export const debounce = (func: (...args: any[]) => void, delay: number) => {
+  // eslint-disable-next-line no-undef
   let timeoutId: NodeJS.Timeout | null;
   return (...args: any[]) => {
     if (timeoutId) clearTimeout(timeoutId);

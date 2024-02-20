@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// eslint-disable-next-line camelcase
 import { IBM_Plex_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
