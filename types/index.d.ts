@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { IImage } from "@/lib/database/models/image.model";
 import React from "react";
 
 // ====== USER PARAMS
@@ -125,6 +124,7 @@ declare type TransformationFormProps = {
   userId: string;
   type: TransformationTypeKey;
   creditBalance: number;
+  // eslint-disable-next-line no-undef
   data?: IImage | null;
   config?: Transformations | null;
 };
